@@ -13,6 +13,14 @@ function clearDisplay() {
     display.value = "";
 }
 
+function calculatePer() {
+    try {
+        display.value = display.value/100;
+    } catch (error) {
+        display.value = "Error"
+    }
+}
+
 function calculate() {
     try {
         display.value = eval(display.value);
